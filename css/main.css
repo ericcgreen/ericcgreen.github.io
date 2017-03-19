@@ -6,7 +6,7 @@ html {
   background-image: url(/images/hexagonbg.png);
   background-size: cover;
   background-position: 0 30%;
-  background-attachment: scroll;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -14,14 +14,20 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-attachment: scroll;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 header {
   width: 100%;
   height: 100px;
   padding: 10px 50px;
+}
+
+article {
+  font-family: 'Lato', sans-serif;
+  width: 650px;
+  margin: auto;
+  line-height: 30px;
 }
 .hexagon {
   width: 250px;
@@ -118,7 +124,6 @@ li:nth-child(4) span {
     background-position: -300px center;
   }
 
-
 .hexagon-in2:hover {
   background-position: -100px center;
 }
@@ -127,7 +132,7 @@ ul {
   text-align: center;
 }
 footer {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
@@ -178,6 +183,15 @@ button {
   width: 100px;
   border: 2px solid black;
   background: rgba(1,1,1,0);
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+button:focus {
+  outline:0;
 }
 
 .hex_title {
@@ -189,4 +203,26 @@ button {
 .hex_title:hover {
   background-color: rgba(0,0,0,0);
   transition: 1.5s ease-out;
+}
+
+.icons {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.icons:hover {
+  opacity: 0.6;
+}
+
+.picuture_box {
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#about_picture1, #about_picture2, #about_picture3 {
+  margin: auto 3em;
+  height: 300px;
+  width: 220px;
 }
