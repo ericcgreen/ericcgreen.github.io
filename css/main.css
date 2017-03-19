@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+* {margin: 0; padding: 0; border: none; position: relative;
+}
+*, *::before, *::after {box-sizing: inherit;}
+html {
+  background-image: url();
+  background-size: cover;
+  background-position: 0 30%;
+  background-attachment: scroll;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-attachment: scroll;
+  overflow: hidden;
+  background: rgba(241,241,241,1);
+}
+.hexagon {
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+  visibility: hidden;
+  transform: rotate(120deg);
+  display: inline-block;
+  list-style-type: none;
+}
+
+.hexagon-in1 {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-60deg);
+  text-decoration: none;
+}
+
+.hexagon-in2 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  visibility: visible;
+  line-height: 200px;
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+  color: rgba(241,241,241,1);
+  text-shadow: 1px 1px #000;
+  transform: rotate(-60deg);
+  transition: 1.5s ease-out;
+}
+
+p {
+  margin-top: 70px;
+}
+
+#welcome {
+  background-image: url(/images/hive.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#resume {
+  background-image: url(/images/resumesnip.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#about {
+  background-image: url(/images/eric_hk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#projects {
+  background-image: url(/images/project1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+li:nth-child(1) span {
+  background-position: -300px center;
+  }
+li:nth-child(2) span {
+  background-position: 0px center;
+  }
+li:nth-child(3) span {
+  background-position: -300px center;
+  }
+
+.hexagon-in2:hover {
+  background-position: -100px center;
+  color: rgb(0, 140, 255);
+  }
+ul {
+  text-align: center;
+}
+span {
+
+}

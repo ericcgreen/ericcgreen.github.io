@@ -51,17 +51,17 @@ function WelcomeController() {
 }
 
 function PortfolioIndexController($state, $stateParams) {
-  this.posts = data
-}
-
-function ResumeShowController($state) {
   
 }
 
+function ResumeShowController($state) {
+
+}
+
 function AboutShowController($state) {
-  $state.go("aboutShow")
+
 }
 
 function ProjectsShowController($state) {
-  $state.go("projectsShow")
+
 }
