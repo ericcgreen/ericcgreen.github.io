@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="portfolioApp">
+<html lang="en" data-ng-app="portfolioApp">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -10,8 +10,16 @@
     <title>Eric Green's Portfolio</title>
   </head>
   <body>
+    <header>
+      <a data-ui-sref="portfolioIndex">
+        <button> Home </button>
+      </a>
+    </header>
     <main data-ui-view>
 
     </main>
+    <footer>
+      &copy; Eric Green 2017
+    </footer>
   </body>
 </html>

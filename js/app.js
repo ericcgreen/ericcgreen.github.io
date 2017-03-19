@@ -1,8 +1,3 @@
-let data = [
-  {general_assembly: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", career: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", university: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
-]
-
-
 angular
   .module("portfolioApp", ["ui.router"])
   .config(["$stateProvider", RouterFunction])
@@ -41,7 +36,7 @@ function RouterFunction($stateProvider){
   .state("projectsShow", {
     url: "/portfolio/projects",
     templateUrl: "js/ng-views/projects.html",
-    controller: "ProjetcsShowCtrl",
+    controller: "ProjectsShowCtrl",
     controllerAs: "vm"
   })
 }
@@ -51,7 +46,7 @@ function WelcomeController() {
 }
 
 function PortfolioIndexController($state, $stateParams) {
-  
+
 }
 
 function ResumeShowController($state) {

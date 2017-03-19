@@ -3,7 +3,7 @@
 }
 *, *::before, *::after {box-sizing: inherit;}
 html {
-  background-image: url();
+  background-image: url(/images/hexagonbg.png);
   background-size: cover;
   background-position: 0 30%;
   background-attachment: scroll;
@@ -16,7 +16,12 @@ body {
   height: 100%;
   background-attachment: scroll;
   overflow: hidden;
-  background: rgba(241,241,241,1);
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  padding: 10px 50px;
 }
 .hexagon {
   width: 250px;
@@ -43,17 +48,13 @@ body {
   height: 100%;
   overflow: hidden;
   visibility: visible;
-  line-height: 200px;
+  line-height: 40px;
   font-family: 'Lato', sans-serif;
   font-size: 2em;
-  color: rgba(241,241,241,1);
-  text-shadow: 1px 1px #000;
+  color: rgba(0,0,0,1);
+  text-shadow: 1px 1px #fff, -1px 1px #fff, 1px -1px #fff, -1px -1px #fff;
   transform: rotate(-60deg);
   transition: 1.5s ease-out;
-}
-
-p {
-  margin-top: 70px;
 }
 
 #welcome {
@@ -80,6 +81,30 @@ p {
   background-repeat: no-repeat;
 }
 
+#project1 {
+  background-image: url(/images/project1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#project2 {
+  background-image: url(/images/project2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#project3 {
+  background-image: url(/images/project3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#projectha {
+  background-image: url(/images/projectha.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 li:nth-child(1) span {
   background-position: -300px center;
   }
@@ -89,14 +114,79 @@ li:nth-child(2) span {
 li:nth-child(3) span {
   background-position: -300px center;
   }
+li:nth-child(4) span {
+    background-position: -300px center;
+  }
+
 
 .hexagon-in2:hover {
   background-position: -100px center;
-  color: rgb(0, 140, 255);
-  }
+}
+
 ul {
   text-align: center;
 }
-span {
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
 
+#projects_body {
+  margin: auto 12em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 3px;
+  width: 250px;
+  height: 720px;
+}
+
+.about_text{
+  border-top: 2px solid black;
+  background: rgba(1,1,1,0);
+  color: black;
+  width: 200px;
+  height: auto;
+  margin: 20px auto;
+  padding: 7px;
+  display: block;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  transition: all linear 0.5s;
+}
+#resume_body{
+  display: flex;
+  flex-direction: column;
+}
+#pdf{
+  align-self: center;
+}
+
+button {
+  margin: 10px auto;
+  height: 30px;
+  width: 100px;
+  border: 2px solid black;
+  background: rgba(1,1,1,0);
+}
+
+.hex_title {
+  height: 100%;
+  padding-top: 60%;
+  background-color: rgba(20,20,20,.4);
+}
+
+.hex_title:hover {
+  background-color: rgba(0,0,0,0);
+  transition: 1.5s ease-out;
 }
