@@ -195,7 +195,8 @@ li:nth-child(4) span {
 }
 
 #projects_body {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   margin: 5em 12em;
   display: flex;
   flex-wrap: wrap;
