@@ -10,7 +10,7 @@ angular
 function RouterFunction($stateProvider){
   $stateProvider
   .state("welcome", {
-    url: "ericcgreen.github.io/",
+    url: "/",
     templateUrl: "js/ng-views/welcome.html",
     controller: "WelcomeCtrl",
     controllerAs: "vm"
@@ -41,11 +41,11 @@ function RouterFunction($stateProvider){
   })
 }
 
-function WelcomeController() {
+function WelcomeController($state) {
 
 }
 
-function PortfolioIndexController($state, $stateParams) {
+function PortfolioIndexController($state) {
 
 }
 
