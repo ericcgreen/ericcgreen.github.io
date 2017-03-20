@@ -1,7 +1,6 @@
 angular
   .module("portfolioApp", ["ui.router"])
   .config(["$stateProvider", RouterFunction])
-  .controller("WelcomeCtrl", [WelcomeController])
   .controller("PortfolioIndexCtrl", ["$state", "$stateParams", PortfolioIndexController])
   .controller("ResumeShowCtrl", ["$state", "$stateParams", ResumeShowController])
   .controller("AboutShowCtrl", ["$state", "$stateParams", AboutShowController])
@@ -9,12 +8,6 @@ angular
 
 function RouterFunction($stateProvider){
   $stateProvider
-  .state("welcome", {
-    url: "/",
-    templateUrl: "js/ng-views/welcome.html",
-    controller: "WelcomeCtrl",
-    controllerAs: "vm"
-  })
   .state("portfolioIndex", {
     url: "/portfolio",
     templateUrl: "js/ng-views/index.html",
@@ -39,10 +32,6 @@ function RouterFunction($stateProvider){
     controller: "ProjectsShowCtrl",
     controllerAs: "vm"
   })
-}
-
-function WelcomeController($state) {
-
 }
 
 function PortfolioIndexController($state) {
