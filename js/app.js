@@ -10,7 +10,7 @@ angular
 function RouterFunction($stateProvider){
   $stateProvider
   .state("welcome", {
-    url: "/welcome",
+    url: "/",
     templateUrl: "js/ng-views/welcome.html",
     controller: "WelcomeCtrl",
     controllerAs: "vm"
