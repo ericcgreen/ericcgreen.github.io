@@ -264,6 +264,13 @@ li:nth-child(4) span {
   align-self: center;
 }
 
+.resume_link {
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  margin-top: 15px;
+}
+
 .hex_title {
   height: 100%;
   padding-top: 60%;
