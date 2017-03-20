@@ -11,24 +11,87 @@ html {
   height: 100%;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
-  height: 100%;
+  /*height: 80%;*/
   overflow: scroll;
 }
 
-header {
-  width: 100%;
-  height: 100px;
-  padding: 10px 50px;
+h1 {
+  margin-left: 8em;
+  padding: 10px 18px 0;
+  margin-top: 3em;
 }
 
-article {
-  font-family: 'Lato', sans-serif;
-  width: 650px;
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
   margin: auto;
-  line-height: 30px;
+  background-color: rgba(213,213,213,1);
+  z-index: 10000;
 }
+
+ul {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: rgba(231,231,231,1);
+  text-align: center;
+}
+
+button {
+  margin: 10px auto;
+  height: 30px;
+  width: 100px;
+  border: 2px solid black;
+  background: rgba(1,1,1,0);
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+button:focus {
+  outline:0;
+}
+
+.home_button {
+  align-self: flex-start;
+  padding-left: 4em;
+  margin-left: 1em;
+}
+
+.icons {
+  text-decoration: none;
+  font-size: 26px;
+  color: black;
+  margin: 0 2em 0 0;
+  padding-right: 1em;
+}
+
+.icons:hover {
+  opacity: 0.6;
+}
+
+.contact_icons {
+  display: flex;
+  align-self: flex-start;
+  margin: 10px 0;
+}
+
 .hexagon {
   width: 250px;
   height: 350px;
@@ -128,31 +191,29 @@ li:nth-child(4) span {
   background-position: -100px center;
 }
 
-ul {
-  text-align: center;
-}
-footer {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
+.app_body {
+  margin-top: 10em;
+  overflow: hidden;
 }
 
 #projects_body {
-  margin: auto 12em;
+  overflow: scroll;
+  margin: 5em 12em;
   display: flex;
   flex-wrap: wrap;
 }
+
 .projects_box {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto 3px;
   width: 250px;
-  height: 720px;
+  height: 630px;
+}
+
+.projects_text {
+  width: 200;
 }
 
 .about_text{
@@ -169,29 +230,40 @@ footer {
   font-size: 14px;
   transition: all linear 0.5s;
 }
-#resume_body{
+
+.about_box {
+  font-family: 'Lato', sans-serif;
+  overflow: scroll;
+  height: 500px;
+  width: 650px;
+  margin: auto;
+  line-height: 30px;
+}
+
+#about_picture1 {
+  background-image: url(/images/eric_dr.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#about_picture2 {
+  background-image: url(/images/eric_hk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#about_picture3 {
+  background-image: url(/images/eric_hp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#resume_body {
   display: flex;
   flex-direction: column;
 }
-#pdf{
+
+#pdf {
+  margin-top: 5em;
   align-self: center;
-}
-
-button {
-  margin: 10px auto;
-  height: 30px;
-  width: 100px;
-  border: 2px solid black;
-  background: rgba(1,1,1,0);
-  transition-duration: 0.4s;
-}
-
-button:hover {
-  color: white;
-  background-color: black;
-}
-button:focus {
-  outline:0;
 }
 
 .hex_title {
@@ -203,26 +275,4 @@ button:focus {
 .hex_title:hover {
   background-color: rgba(0,0,0,0);
   transition: 1.5s ease-out;
-}
-
-.icons {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-}
-
-.icons:hover {
-  opacity: 0.6;
-}
-
-.picuture_box {
-  height: 350px;
-  display: flex;
-  justify-content: space-around;
-}
-
-#about_picture1, #about_picture2, #about_picture3 {
-  margin: auto 3em;
-  height: 300px;
-  width: 220px;
 }
