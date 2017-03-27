@@ -72,6 +72,10 @@ button:focus {
   margin-left: 1em;
 }
 
+.namelogo {
+  height: 45px;
+}
+
 .icons {
   text-decoration: none;
   font-size: 26px;
@@ -197,7 +201,7 @@ li:nth-child(4) span {
 #projects_body {
   overflow-y: scroll;
   overflow-x: hidden;
-  margin: 5em 12em;
+  margin: 5em 13em;
   display: flex;
   flex-wrap: wrap;
 }
@@ -281,4 +285,35 @@ li:nth-child(4) span {
 .hex_title:hover {
   background-color: rgba(0,0,0,0);
   transition: 1.5s ease-out;
+}
+
+.typewriter {
+  font-family: 'Lato', sans-serif;
+  margin: auto;
+  text-align: center;
+  width: 530px;
+}
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .15em solid rgb(144,25,29);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  animation:
+    typing 4s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0,0,0); }
+}
+
+.nametag{
+  color: rgba(200,200,200,1);
 }

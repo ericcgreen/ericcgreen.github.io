@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
@@ -14,17 +15,20 @@
     <header>
       <span class="home_button">
         <a data-ui-sref="portfolioIndex">
-          <button> Home </button>
+          <img class="namelogo" src="images/EG2.png">
         </a>
       </span>
       <span class="contact_icons">
-        <a class="icons" href="https://www.linkedin.com/in/ericcgreen/"target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a class="icons" href="https://github.com/ericcgreen" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a class="icons" href="mailto:green.eric.c@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a class="icons" href="https://www.linkedin.com/in/ericcgreen/"target="_blank" alt="Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a class="icons" href="https://github.com/ericcgreen" target="_blank" alt="Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a class="icons" href="mailto:green.eric.c@gmail.com" alt="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
       </span>
     </header>
     <main data-ui-view>
       <div class="app_body">
+        <div class="typewriter">
+          <h1><span class="nametag"> &ltname&gt </span> Eric C. Green  <span class="nametag"> &lt/name&gt </span>  </h1>
+        </div>
       <ul>
         <li class="hexagon">
           <a class="hexagon-in1" data-ui-sref="portfolioIndex">
