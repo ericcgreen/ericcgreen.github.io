@@ -17,11 +17,6 @@ body {
   overflow: scroll;
 }
 
-h1 {
-  margin: 3em auto 1em;
-  text-align: center;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -72,6 +67,22 @@ button:focus {
   margin-left: 1em;
 }
 
+.home_botton:hover {
+  border: 2px solid white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: .5s ease;
+}
+
 .namelogo {
   height: 45px;
 }
@@ -84,7 +95,7 @@ button:focus {
   padding-right: 1em;
 }
 
-.icons:hover {
+.icons:hover, span:hover .overlay {
   opacity: 0.6;
 }
 
@@ -125,7 +136,7 @@ button:focus {
   color: rgba(0,0,0,1);
   text-shadow: 1px 1px #fff, -1px 1px #fff, 1px -1px #fff, -1px -1px #fff;
   transform: rotate(-60deg);
-  transition: 1.5s ease-out;
+  transition: 1s ease-out;
 }
 
 #welcome {
@@ -193,6 +204,10 @@ li:nth-child(4) span {
   background-position: -100px center;
 }
 
+.home_body {
+  margin-top: 7em;
+}
+
 .app_body {
   margin-top: 10em;
   overflow: hidden;
@@ -201,7 +216,7 @@ li:nth-child(4) span {
 #projects_body {
   overflow-y: scroll;
   overflow-x: hidden;
-  margin: 5em 13em;
+  margin: 10em 13em;
   display: flex;
   flex-wrap: wrap;
 }
@@ -237,7 +252,7 @@ li:nth-child(4) span {
 .about_box {
   font-family: 'Lato', sans-serif;
   overflow: scroll;
-  height: 500px;
+  height: 600px;
   width: 650px;
   margin: auto;
   line-height: 30px;
@@ -276,15 +291,27 @@ li:nth-child(4) span {
   margin-top: 15px;
 }
 
+.hex_title_home {
+  height: 100%;
+  padding-top: 60%;
+  background-color: rgba(20,20,20,.6);
+}
+
+.hex_title_home:hover{
+  background-color: rgba(0,0,0,0);
+  transition: 1.5s ease-out;
+}
+
 .hex_title {
   height: 100%;
   padding-top: 60%;
-  background-color: rgba(20,20,20,.4);
+  opacity: 0;
 }
 
 .hex_title:hover {
-  background-color: rgba(0,0,0,0);
-  transition: 1.5s ease-out;
+  background-color: rgba(0,0,0,.7);
+  transition: 1s ease-out;
+  opacity: 1;
 }
 
 .typewriter {
