@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
@@ -15,35 +14,34 @@
     <header>
       <span class="home_button">
         <span class="overlay">
-        <a data-ui-sref="portfolioIndex">
-          <img class="namelogo" src="images/EG2.png" alt="Home Button" title="Home">
-        </a>
+          <a data-ui-sref="portfolioIndex">
+            <img class="namelogo" src="images/EG2.png" alt="Home Button" title="Home">
+          </a>
+        </span>
       </span>
-      </span>
+    </header>
+    <main data-ui-view>
+      <div class="home_body">
+        <ul>
+          <li class="hexagon">
+            <a class="hexagon-in1" data-ui-sref="portfolioIndex">
+            <span class="hexagon-in2" id="welcome">
+              <div class="hex_title_home">Welcome</div>
+            </span>
+            </a>
+          </li>
+        </ul>
+        <div class="typewriter" id="welcome_type">
+          <h1><span class="typetag"> &ltname&gt </span> Eric C. Green  <span class="typetag"> &lt/name&gt </span>  </h1>
+        </div>
+      </div>
+    </main>
+    <footer>
       <span class="contact_icons">
         <a class="icons" href="https://www.linkedin.com/in/ericcgreen/"target="_blank" alt="Linked In" title="Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         <a class="icons" href="https://github.com/ericcgreen" target="_blank" alt="Github" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a>
         <a class="icons" href="mailto:green.eric.c@gmail.com" alt="Email" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
       </span>
-    </header>
-    <main data-ui-view>
-      <div class="home_body">
-        <div class="typewriter">
-          <h1><span class="nametag"> &ltname&gt </span> Eric C. Green  <span class="nametag"> &lt/name&gt </span>  </h1>
-        </div>
-      <ul>
-        <li class="hexagon">
-          <a class="hexagon-in1" data-ui-sref="portfolioIndex">
-          <span class="hexagon-in2" id="welcome">
-            <div class="hex_title_home">Welcome</div>
-          </span>
-          </a>
-        </li>
-      </ul>
-      </div>
-    </main>
-    <footer>
-      &copy; Eric Green 2017
     </footer>
   </body>
 </html>

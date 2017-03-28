@@ -29,6 +29,14 @@ header {
   z-index: 10000;
 }
 
+h1 {
+  font-family: 'Lato', sans-serif;
+}
+
+.nav_bar {
+  top: 3em;
+}
+
 ul {
   text-align: center;
 }
@@ -38,7 +46,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 5px;
   background-color: rgba(231,231,231,1);
   text-align: center;
 }
@@ -84,15 +92,14 @@ button:focus {
 }
 
 .namelogo {
-  height: 45px;
+  height: 50px;
 }
 
 .icons {
   text-decoration: none;
   font-size: 26px;
   color: black;
-  margin: 0 2em 0 0;
-  padding-right: 1em;
+  margin: auto;
 }
 
 .icons:hover, span:hover .overlay {
@@ -102,7 +109,10 @@ button:focus {
 .contact_icons {
   display: flex;
   align-self: flex-start;
-  margin: 10px 0;
+}
+
+.fa {
+  margin: 0 10px;
 }
 
 .hexagon {
@@ -280,7 +290,7 @@ li:nth-child(4) span {
 }
 
 #pdf {
-  margin-top: 5em;
+  margin-top: 7em;
   align-self: center;
 }
 
@@ -320,6 +330,15 @@ li:nth-child(4) span {
   text-align: center;
   width: 530px;
 }
+
+#projects_type {
+  width: 360px;
+}
+
+#resume_type {
+  width: 480px;
+}
+
 .typewriter h1 {
   overflow: hidden;
   border-right: .15em solid rgb(144,25,29);
@@ -341,6 +360,10 @@ li:nth-child(4) span {
   50% { border-color: rgb(0,0,0); }
 }
 
-.nametag{
-  color: rgba(200,200,200,1);
+.typetag {
+  color: rgba(150,150,150,1);
+}
+
+#welcome_type {
+  margin-top: 4em;
 }
