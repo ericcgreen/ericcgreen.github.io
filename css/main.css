@@ -367,3 +367,31 @@ li:nth-child(4) span {
 #resume_type {
   width: 480px;
 }
+
+.left_button {
+  margin-left: 15em;
+}
+
+.right_button {
+  margin-right: 15em;
+}
+
+.icon_left {
+  margin-left: 7em;
+}
+
+.icon_right {
+  margin-right: 7em;
+}
+
+.contact_me {
+  font-family: 'Lato', sans-serif;
+  margin-top: 7px;
+  margin-left: 10em;
+}
+
+.copyright {
+  font-family: 'Lato', sans-serif;
+  margin-top: 7px;
+  margin-right: 10em;
+}
