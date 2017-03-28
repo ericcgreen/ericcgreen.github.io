@@ -112,7 +112,7 @@ button:focus {
 }
 
 .fa {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .hexagon {
@@ -262,7 +262,7 @@ li:nth-child(4) span {
 .about_box {
   font-family: 'Lato', sans-serif;
   overflow: scroll;
-  height: 600px;
+  height: 700px;
   width: 650px;
   margin: auto;
   line-height: 30px;
@@ -377,21 +377,21 @@ li:nth-child(4) span {
 }
 
 .icon_left {
-  margin-left: 7em;
+  margin-left: 13em;
 }
 
 .icon_right {
-  margin-right: 7em;
+  margin-right: 3em;
 }
 
 .contact_me {
   font-family: 'Lato', sans-serif;
   margin-top: 7px;
-  margin-left: 10em;
+  margin-left: 20em;
 }
 
 .copyright {
   font-family: 'Lato', sans-serif;
   margin-top: 7px;
-  margin-right: 10em;
+  margin-right: 7em;
 }
