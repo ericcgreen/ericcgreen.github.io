@@ -403,3 +403,36 @@ li:nth-child(4) span {
   margin-top: 7px;
   margin-right: 7em;
 }
+
+.mySlides {display:none;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer;
+  display: inline-flex;}
+.w3-badge {height:13px;width:13px;padding:0;}
+
+.hexagon_projects {
+  position: relative;
+  width: 475px;
+  height: 274.24px;
+  background-color: #64C7CC;
+  margin: 137.12px 0;
+}
+
+.hexagon_projects:before,
+.hexagon_projects:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 237.5px solid transparent;
+  border-right: 237.5px solid transparent;
+}
+
+.hexagon_projects:before {
+  bottom: 100%;
+  border-bottom: 137.12px solid #64C7CC;
+}
+
+.hexagon_projects:after {
+  top: 100%;
+  width: 0;
+  border-top: 137.12px solid #64C7CC;
+}

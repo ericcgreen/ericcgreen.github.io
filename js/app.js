@@ -48,4 +48,4 @@ function AboutShowController($state) {
 
 function ProjectsShowController($state) {
 
-}
+};
