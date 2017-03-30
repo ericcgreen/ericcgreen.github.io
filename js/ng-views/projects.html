@@ -13,9 +13,21 @@
 <div id="projects_body">
   <div class="hexagon_projects">
   <div class="w3-content w3-display-container" style="max-width:800px">
-    <img class="mySlides" src="./images/project1.png" style="width:100%">
-    <img class="mySlides" src="./images/project2.png" style="width:100%">
-    <img class="mySlides" src="./images/project3.png" style="width:100%">
+    <div class="mySlides">
+      <img src="./images/project1.png">
+      <a href="https://ericcgreen.github.io/eric_green_project1/" target="_blank"><button>Launch App</button></a>
+      <a id="code_p1" href="https://github.com/ericcgreen/eric_green_project1" target="_blank"><button>See the Code</button></a>
+    </div>
+    <div class="mySlides">
+      <img src="./images/project2.png">
+      <a href="https://wdi-safe-travels.herokuapp.com/" target="_blank"><button>Launch App</button></a>
+      <a id="code_p2" href="https://github.com/ericcgreen/project2" target="_blank"><button>See the Code</button></a>
+    </div>
+    <div class="mySlides">
+      <img src="./images/project3.png">
+      <a href="https://cabralsylvester.github.io/Project3_FarMart/" target="_blank"><button>Launch App</button></a>
+      <a id="code_p3"  href="https://github.com/cabralsylvester/Project3_FarMart" target="_blank"><button>See the Code</button></a>
+    </div>
     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
 
       <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
@@ -24,8 +36,10 @@
     </div>
   </div>
   </div>
-  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+  <div class="next_buttons">
+  <button class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</button>
+  <div>
 </div>
 <script src="js/script.js"></script>
 <!--
