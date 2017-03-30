@@ -226,7 +226,7 @@ li:nth-child(4) span {
 #projects_body {
   overflow-y: scroll;
   overflow-x: hidden;
-  margin: 15em;
+  margin: 13em 10em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
