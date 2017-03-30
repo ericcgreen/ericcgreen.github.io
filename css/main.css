@@ -215,19 +215,20 @@ li:nth-child(4) span {
 }
 
 .home_body {
-  margin-top: 7em;
+  margin-top: 10em;
+  margin-bottom: 5em;
 }
 
 .app_body {
-  margin-top: 13em;
-  margin-bottom: 5em; 
+  margin-top: 10em;
+  margin-bottom: 5em;
   overflow: hidden;
 }
 
 #projects_body {
   overflow-y: scroll;
   overflow-x: hidden;
-  margin: 13em 10em;
+  margin: 10em auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -361,7 +362,7 @@ li:nth-child(4) span {
 }
 
 #welcome_type {
-  margin: 3em auto;
+  /*margin: 3em auto;*/
 }
 
 #title_type {
