@@ -220,6 +220,7 @@ li:nth-child(4) span {
 
 .app_body {
   margin-top: 13em;
+  margin-bottom: 5em; 
   overflow: hidden;
 }
 
