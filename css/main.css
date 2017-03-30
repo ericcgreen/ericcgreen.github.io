@@ -116,8 +116,8 @@ button:focus {
 }
 
 .hexagon {
-  width: 250px;
-  height: 350px;
+  width: 375px;
+  height: 475px;
   overflow: hidden;
   visibility: hidden;
   transform: rotate(120deg);
@@ -226,9 +226,10 @@ li:nth-child(4) span {
 #projects_body {
   overflow-y: scroll;
   overflow-x: hidden;
-  margin: 13em;
+  margin: 15em;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .projects_box {
@@ -236,24 +237,26 @@ li:nth-child(4) span {
   flex-direction: column;
   align-items: center;
   margin: auto 3px;
-  width: 250px;
-  height: 630px;
+  width: 400px;
+  height: 700px;
 }
 
 .projects_text {
-  width: 200;
+  width: 380px;
+  margin: auto;
 }
 
 .about_text {
   border-top: 2px solid black;
   background: rgba(1,1,1,0);
   color: black;
-  width: 200px;
+  width: 400px;
   height: auto;
   margin: 20px auto;
   padding: 7px;
   display: block;
   text-align: center;
+  align-items: center;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   transition: all linear 0.5s;
