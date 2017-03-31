@@ -228,7 +228,6 @@ li:nth-child(4) span {
 #projects_body {
   margin-top: 10em;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -404,18 +403,32 @@ li:nth-child(4) span {
 }
 
 .mySlides {
-  display:none;
+  display: flex;
   z-index: 100000000;
   text-align: center;
+  flex-direction: column;
 }
 
 .mySlides img {
   width: 100%;
-  height: 260px;
+  height: 274.24px;
 }
-/*.w3-left, .w3-right, .w3-badge {cursor:pointer;
-  display: inline-flex;}
-.w3-badge {height:13px;width:13px;padding:0;}*/
+
+.imghvr-shutter-out-vert:before {
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+}
+
+.imghvr-shutter-out-vert:hover:before {
+    top: 0;
+    bottom: 0;
+}
+.w3-left, .w3-right {
+  margin: 2em;
+}
+
 
 .hexagon_projects {
   position: relative;
@@ -446,5 +459,23 @@ li:nth-child(4) span {
 }
 .next_buttons {
   text-align: center;
-  align-items: center;
+}
+
+.projects_buttons {
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+}
+
+figcaption {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  font-style: normal !important;
+  line-height: 30px;
+}
+.project_title {
+  height: 50px;
+  width: 150px;
+  margin-bottom: 50px;
 }
