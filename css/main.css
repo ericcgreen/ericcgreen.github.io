@@ -173,7 +173,7 @@ button:focus {
   background-repeat: no-repeat;
 }
 
-#project1 {
+/*#project1 {
   background-image: url(/images/project1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -195,7 +195,7 @@ button:focus {
   background-image: url(/images/projectha.png);
   background-size: cover;
   background-repeat: no-repeat;
-}
+}*/
 
 li:nth-child(1) span {
   background-position: -300px center;
@@ -233,7 +233,7 @@ li:nth-child(4) span {
   height: 650px;
 }
 
-.projects_box {
+/*.projects_box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,7 +244,7 @@ li:nth-child(4) span {
 .projects_text {
   width: 350px;
   margin: auto;
-}
+}*/
 
 .about_text {
   border-top: 2px solid black;
