@@ -173,30 +173,6 @@ button:focus {
   background-repeat: no-repeat;
 }
 
-/*#project1 {
-  background-image: url(/images/project1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#project2 {
-  background-image: url(/images/project2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#project3 {
-  background-image: url(/images/project3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#projectha {
-  background-image: url(/images/projectha.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}*/
-
 li:nth-child(1) span {
   background-position: -300px center;
   }
@@ -226,25 +202,12 @@ li:nth-child(4) span {
 }
 
 #projects_body {
-  margin-top: 10em;
+  margin-top: 8em;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 650px;
 }
-
-/*.projects_box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 380px;
-  height: 710px;
-}
-
-.projects_text {
-  width: 350px;
-  margin: auto;
-}*/
 
 .about_text {
   border-top: 2px solid black;
