@@ -496,7 +496,7 @@ h3 {
 .welcome {
   display: none;
 }
-.hexagon-in2:hover h3 {
+.hexagon-in2:hover h3, .hexagon-in2:hover h6 {
   display: none;
 }
 
@@ -529,4 +529,9 @@ h3 {
 
 h5 {
   font-size: 40px;
+}
+
+h6 {
+  text-decoration: none;
+  font-size: 24px;
 }
