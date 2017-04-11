@@ -70,8 +70,8 @@ button:focus {
 }
 
 .home_button {
-  align-self: flex-start;
-  width: 170px;
+  text-align: center;
+  width: 50px;
 }
 
 .home_botton:hover {
@@ -190,7 +190,7 @@ li:nth-child(4) span {
 }
 
 #home_body {
-  margin-top: 13em;
+  margin-top: 10em;
   margin-bottom: 5em;
 }
 
@@ -207,7 +207,7 @@ li:nth-child(4) span {
 }
 
 #projects_body {
-  margin-top: 10em;
+  margin-top: 8em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,10 +326,6 @@ li:nth-child(4) span {
 
 .typetag {
   color: rgba(150,150,150,1);
-}
-
-#title_type {
-  width: 540px;
 }
 
 #projects_type {
@@ -476,7 +472,7 @@ h3 {
 
 .skills {
   font-family: 'Lato', sans-serif;
-  margin: auto 3em;
+  margin: 3em 3em 0;
 }
 
 .skills ul {
