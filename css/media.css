@@ -1,3 +1,9 @@
+@media screen and (max-width: 870px){
+    .infobox {
+      display: none;
+    }
+}
+
 /* ----------- Non-Retina Screens ----------- */
 @media screen
   and (min-device-width: 1200px)

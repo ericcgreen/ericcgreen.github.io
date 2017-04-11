@@ -10,21 +10,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
     <script src="js/app.js"></script>
     <title>Eric Green's Portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
   </head>
 
   <body>
     <header>
-      <span class="home_button">
+      <div class="infobox">
+        <h1><i class="fa fa-laptop" aria-hidden="true"></i> Full Stack Web Developer</h1>
+      </div>
+      <div class="home_button">
         <span class="overlay">
           <a data-ui-sref="portfolioIndex">
             <img class="namelogo" src="images/EG2.png" alt="Home Button" title="Home">
           </a>
         </span>
-      </span>
+      </div>
+      <div class="infobox">
+        <h1><i class="fa fa-map-marker" aria-hidden="true"></i> Washington, D.C.</h1>
+      </div>
     </header>
     <main data-ui-view>
       <div id="home_body">
@@ -43,6 +49,7 @@
             </a>
           </li>
         </ul>
+
       </div>
     </main>
     <footer>
