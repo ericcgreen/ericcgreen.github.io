@@ -201,13 +201,13 @@ li:nth-child(4) span {
 }
 
 .app_body {
-  margin-top: 7em;
+  margin-top: 10em;
   margin-bottom: 5em;
   overflow: hidden;
 }
 
 #projects_body {
-  margin-top: 7em;
+  margin-top: 10em;
   display: flex;
   justify-content: center;
   align-items: center;
