@@ -2,6 +2,26 @@
     .infobox {
       display: none;
     }
+    .skills ul {
+      width: 470px;
+      height: 200px;
+      flex-wrap: wrap;
+    }
+    #resume_body {
+      margin: 8em auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    #pdfimg {
+      display: none;
+    }
+    .resume_link {
+      order: 2;
+    }
+    .skills {
+      order: 1;
+    }
 }
 
 /* ----------- Non-Retina Screens ----------- */
