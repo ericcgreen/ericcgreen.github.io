@@ -267,6 +267,18 @@ li:nth-child(4) span {
   align-self: center;
 }
 
+#pdfimg {
+  display: none;
+  background-image: url("../images/resumeimage.png");
+  background-color: rgba(0,0,0,0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: auto;
+  height: 90%;
+  width: 100%;
+}
+
 .resume_link {
   text-align: center;
   text-decoration: none;

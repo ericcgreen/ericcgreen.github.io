@@ -26,14 +26,6 @@
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
     ul {
       display: flex;
       flex-direction: column;
@@ -46,6 +38,33 @@
         height: 300px;
         flex-wrap: wrap;
       }
+      #resume_body {
+        margin: 8em auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #pdf {
+        display: none;
+      }
+      #pdfimg {
+        display: block;
+      }
+      .resume_link {
+        order: 2;
+      }
+      .skills {
+        order: 1;
+      }
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
 }
 
 /* Landscape */
@@ -63,14 +82,6 @@
   and (min-device-width: 414px)
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3) {
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
     ul {
       display: flex;
       flex-direction: column;
@@ -83,6 +94,33 @@
         height: 300px;
         flex-wrap: wrap;
       }
+      #resume_body {
+        margin: 8em auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #pdf {
+        display: none;
+      }
+      #pdfimg {
+        display: block;
+      }
+      .resume_link {
+        order: 2;
+      }
+      .skills {
+        order: 1;
+      }
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
 }
 
 /* Landscape */
@@ -101,15 +139,6 @@
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1) {
     ul {
       display: flex;
       flex-direction: column;
@@ -122,6 +151,34 @@
         height: 300px;
         flex-wrap: wrap;
       }
+      #resume_body {
+        margin: 8em auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #pdf {
+        display: none;
+      }
+      #pdfimg {
+        display: block;
+      }
+      .resume_link {
+        order: 2;
+      }
+      .skills {
+        order: 1;
+      }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
 }
 
 /* Landscape */
@@ -139,14 +196,6 @@
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1) {
     ul {
       display: flex;
       flex-direction: column;
@@ -159,6 +208,33 @@
         height: 300px;
         flex-wrap: wrap;
       }
+      #resume_body {
+        margin: 8em auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #pdf {
+        display: none;
+      }
+      #pdfimg {
+        display: block;
+      }
+      .resume_link {
+        order: 2;
+      }
+      .skills {
+        order: 1;
+      }
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
 }
 
 /* Landscape */
@@ -176,15 +252,6 @@
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
     ul {
       display: flex;
       flex-direction: column;
@@ -197,6 +264,33 @@
         height: 300px;
         flex-wrap: wrap;
       }
+      #resume_body {
+        margin: 8em auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #pdf {
+        display: none;
+      }
+      #pdfimg {
+        display: block;
+      }
+      .resume_link {
+        order: 2;
+      }
+      .skills {
+        order: 1;
+      }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 /* Landscape */
@@ -215,14 +309,6 @@
   and (device-width: 360px)
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 3) {
-}
-
-/* Portrait */
-@media screen
-  and (device-width: 360px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3)
-  and (orientation: portrait) {
     ul {
       display: flex;
       flex-direction: column;
@@ -235,6 +321,33 @@
         height: 300px;
         flex-wrap: wrap;
       }
+      #resume_body {
+        margin: 8em auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #pdf {
+        display: none;
+      }
+      #pdfimg {
+        display: block;
+      }
+      .resume_link {
+        order: 2;
+      }
+      .skills {
+        order: 1;
+      }
+}
+
+/* Portrait */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
 }
 
 /* Landscape */
@@ -252,13 +365,6 @@
 @media
   (min-device-width: 800px)
   and (max-device-width: 1280px) {
-
-}
-
-/* Portrait */
-@media
-  (max-device-width: 800px)
-  and (orientation: portrait) {
     ul {
       display: flex;
       flex-direction: column;
@@ -271,6 +377,32 @@
         height: 300px;
         flex-wrap: wrap;
       }
+      #resume_body {
+        margin: 8em auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #pdf {
+        display: none;
+      }
+      #pdfimg {
+        display: block;
+      }
+      .resume_link {
+        order: 2;
+      }
+      .skills {
+        order: 1;
+      }
+
+}
+
+/* Portrait */
+@media
+  (max-device-width: 800px)
+  and (orientation: portrait) {
+
 }
 
 /* Landscape */
