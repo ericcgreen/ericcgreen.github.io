@@ -256,13 +256,14 @@ li:nth-child(4) span {
 }
 
 #resume_body {
+  margin-top: 8em;
   display: flex;
   flex-direction: column;
-  height: 850px;
+  height: 950px;
 }
 
 #pdf {
-  margin-top: 7em;
+  margin-top: 2em;
   align-self: center;
 }
 
