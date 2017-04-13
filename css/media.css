@@ -51,8 +51,11 @@
       flex-direction: column;
       align-items: center;
       }
+      #welcome-hex {
+        margin-top: 50%;
+      }
       #projects_body{
-        margin-top: 35%;
+        margin-top: 40%;
       }
       .skills ul {
         height: 300px;
@@ -106,6 +109,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      }
+      #welcome-hex {
+        margin-top: 50%;
       }
       #projects_body{
         margin-top: 35%;
@@ -164,6 +170,9 @@
       flex-direction: column;
       align-items: center;
       }
+      #welcome-hex {
+        margin-top: 50%;
+      }
       #projects_body{
         margin-top: 35%;
       }
@@ -221,6 +230,9 @@
       flex-direction: column;
       align-items: center;
       }
+      #welcome-hex {
+        margin-top: 50%;
+      }
       #projects_body{
         margin-top: 35%;
       }
@@ -276,6 +288,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      }
+      #welcome-hex {
+        margin-top: 50%;
       }
       #projects_body{
         margin-top: 35%;
@@ -334,6 +349,9 @@
       flex-direction: column;
       align-items: center;
       }
+      #welcome-hex {
+        margin-top: 50%;
+      }
       #projects_body{
         margin-top: 35%;
       }
@@ -389,6 +407,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      }
+      #welcome-hex {
+        margin-top: 50%;
       }
       #projects_body{
         margin-top: 35%;
