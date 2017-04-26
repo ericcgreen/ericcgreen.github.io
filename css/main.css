@@ -1,3 +1,26 @@
 #pdf {
   margin: 0 auto;
 }
+
+#pdfimg {
+  display: none;
+  background-image: url("../images/resumeimage.png");
+  background-color: rgba(0,0,0,0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: auto;
+  height: 500px;
+  width: 100%;
+}
+
+@media only screen
+  and (min-device-width: 350px)
+  and (max-device-width: 1280px){
+  #pdf {
+    display: none;
+  }
+  #pdfimg {
+    display: block;
+  }
+}
