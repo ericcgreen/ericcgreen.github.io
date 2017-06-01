@@ -88,6 +88,16 @@
   background: inherit;
 }
 
+#headshot-zoom {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: -130px;
+  right: 70px;
+  z-index: 100;
+  opacity: 0.6;
+}
+
 @media only screen
   and (min-device-width: 350px)
   and (max-device-width: 1280px){
