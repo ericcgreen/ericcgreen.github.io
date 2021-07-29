@@ -1,81 +1,70 @@
-# Your Personal Portfolio Site
+# Getting Started with Create React App
 
-## Instructions
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Create a personal portfolio page and deploy it to [Github pages](https://pages.github.com/).
+## Available Scripts
 
-You may continue with the "About Me" page you created when interviewing for this course. However, the intent is that **this will be the foundation of the portfolio page you display to employers**, so you'll probably want to make significant improvements!
+In the project directory, you can run:
 
-## Requirements
+### `npm start`
 
-**This lab counts as an assignment and is due today at 5pm.** 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- Separate concerns of semantics and style: your CSS should be in a linked stylesheet separate from your HTML.
-- Your HTML should [pass the W3 HTML validator](https://validator.w3.org/#validate_by_input).
-- Your CSS should [pass the W3 CSS validator](https://jigsaw.w3.org/css-validator/#validate_by_input).
-- Javascript isn't required, but you get bonus points for giving it a shot!
-- Your page must be deployed to [Github pages](https://pages.github.com/). This is a free hosting service provided by Github. You should name your repository `your-username.github.io`. The result is that your page will be publicly available at http://your-username.github.io.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-> You have not been taught how to deploy to Github Pages. That's okay! This is an opportunity to learn something new on your own. Just follow the instructions [here](https://pages.github.com/). If you run into any issues, just ask the instructor on lab support.
+### `npm test`
 
-### Submission
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Please **create an issue on this repo, ga-wdi-exercises/portfolio_pages**, containing a link to the **repo** you created -- not the webpage. So your issue should contain `http://github.com/wdidcstudent/wdidcstudent.github.io`, for example, and **not** `http://wdidcstudent.github.io`.
+### `npm run build`
 
-## Pairing with Others
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Every student must create their *own* website, but you're **welcome and encouraged** to collaborate with others! The best way to create a great website is to get targeted feedback from others at several points in the process.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Tips
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-* Think about who you want to view your site (potential employers, freelance opportunities, friends). I know it is tempting to make it flashy with tons of jQuery plugins, but the most important thing when designing your site is to make it EASY for your visitors to access the information they want and navigate around the page.
+### `npm run eject`
 
-* Think about the goal for your site and what you want your users to do (read about your story, look at your work/code/writing, contact you). Guide them to taking those actions by making them prominent / easy to find.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-* Wireframe what you want your site to look like first!
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-* Use proper indentation and organize your code. Chances are people will view your source!
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-* You may use Bootstrap or other CSS frameworks. If you do, you're encouraged to start off using it so that you get an idea of how you want your page to look, and then to gradually remove the Bootstrap in favor of CSS you wrote yourself.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Inspiration
+## Learn More
 
-Personal websites from some previous WDI grads:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-* http://britt.is/
-* http://raleighdaniel.com/
-* http://jlappano.github.io/
-* http://bradpuder.com/
-* http://nicholalexander.com/
-* http://kevoncheung.com/
-* http://rlee1121.github.io/
-* http://www.larrybuch.com/
-* http://www.timlatorre.com/
-* http://adrianbautista.com/
-* http://www.andrewmadden.com/
-* http://www.belcortes.com/
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-You can also Google "developer portfolio website" for more ideas :)
+### Code Splitting
 
-## Domains (Optional)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-If you'd like, you can purchase a domain and then "point" the domain to your Github Pages repo. Here are instructions on how to do so:
+### Analyzing the Bundle Size
 
-https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-We recommend [Namecheap](https://www.namecheap.com/).
+### Making a Progressive Web App
 
-## Sass (Optional)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-If you'd like, try adding some [Sass](http://sass-lang.com/) to your portfolio site.
+### Advanced Configuration
 
-We'd like you to try using:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- At least three variables
-- At least one mixin
-- The `&` selector
+### Deployment
 
-Bonus!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-- Use a [color function](http://sass-lang.com/documentation/Sass/Script/Functions.html): `darken`, `lighten`, etc.
-- Use a function to create 3d effects, like https://jesse.sh/makes-3d-buttons-with-sass/
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
