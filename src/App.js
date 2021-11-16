@@ -4,6 +4,8 @@ import Navigation from './components/navigation-v2';
 import Footer from './components/footer';
 import Section from './components/section';
 import Cards from './ui/cards';
+import Contact from './ui/contact';
+import Timeline from './ui/timeline';
 
 const sections = [
   {
@@ -31,8 +33,8 @@ const sections = [
     ),
   },
   { id: 'portfolio', icon: 'terminal', iconColor: 'text-sec-green', bgColor: 'bg-sec-green', title: 'Portfolio', component: Cards },
-  { id: 'resume', icon: 'document-text', iconColor: 'text-sec-blue', bgColor: 'bg-sec-blue', title: 'Resume' },
-  { id: 'contact', icon: 'mail', iconColor: 'text-sec-purple', bgColor: 'bg-sec-purple', title: 'Contact Me' },
+  { id: 'resume', icon: 'document-text', iconColor: 'text-sec-blue', bgColor: 'bg-sec-blue', title: 'Resume', component: Timeline },
+  { id: 'contact', icon: 'mail', iconColor: 'text-sec-purple', bgColor: 'bg-sec-purple', title: 'Contact Me', component: Contact },
 ];
 
 function App() {
@@ -40,7 +42,7 @@ function App() {
   sectionRefs.current = sections.map((ref, index) => (sectionRefs.current[index] = React.createRef()));
 
   const handleScrollTo = (e, index) => {
-    sectionRefs.current[index].current.scrollIntoView();
+    sectionRefs.current[index].current.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
   };
   return (
     <>
