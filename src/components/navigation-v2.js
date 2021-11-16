@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Icon from '../ui/icon';
 
 function MenuOptions({ sections, handleScrollTo, className, id }) {
-  const wrapperClassName = 'overflow-hidden text-primary fixed left-0 w-48 z-50 pb-16';
+  const wrapperClassName = 'shadow-lg overflow-hidden text-primary fixed left-0 w-48 z-50 pb-16';
   const handleClick = (e, index) => {
     e.preventDefault();
     handleScrollTo(e, index);
