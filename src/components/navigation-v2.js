@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import Icon from '../ui/icon';
 
 function MenuOptions({ sections, handleScrollTo, className, id }) {
-  const wrapperClassName = 'text-primary fixed left-0 w-48 z-50 pb-16';
-  const linkClassName = 'inline-block no-underline hover:text-secondary font-medium text-lg py-2 px-4 lg:-ml-2';
+  const wrapperClassName = 'overflow-hidden text-primary fixed left-0 w-48 z-50 pb-16';
   const handleClick = (e, index) => {
     e.preventDefault();
     handleScrollTo(e, index);
@@ -21,9 +21,14 @@ function MenuOptions({ sections, handleScrollTo, className, id }) {
           );
         }
         return (
-          <li key={`nav-${section.id}`}>
-            <a className={linkClassName} href={`/${section.id}`} onClick={(e) => handleClick(e, index)}>
-              {section.title}
+          <li key={`nav-${section.id}`} className={`group ${section.bgColor}`}>
+            <a
+              className="bg-white group-hover:bg-quaternary transition-transform duration-500 ease-in-out transform group-hover:translate-x-2 no-underline flex items-center font-bold py-3 "
+              href={`/${section.id}`}
+              aria-label={`Navigate to the ${section.title} section`}
+              onClick={(e) => handleClick(e, index)}>
+              {section.icon ? <Icon name={section.icon} className={`w-6 h-6 inline-block mx-4 ${section.iconColor}`} /> : null}
+              <span className="inline-block text-primary">{section.title}</span>
             </a>
           </li>
         );
