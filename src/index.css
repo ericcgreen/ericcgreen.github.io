@@ -13,6 +13,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+::selection {
+  background: #add3d0; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #add3d0; /* Gecko Browsers */
+}
+
 .hero-background {
   background-color: #153250;
   background-image: url(./assets/eric_headshot_1.JPG);

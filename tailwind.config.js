@@ -8,6 +8,7 @@ module.exports = {
         secondary: '#970C10',
         tertiary: '#ADD3D0',
         quaternary: '#FEFCFF',
+        'pri-blue': '#204B78',
         'sec-green': '#55970C',
         'sec-blue': '#0C9793',
         'sec-purple': '#4E0C97',

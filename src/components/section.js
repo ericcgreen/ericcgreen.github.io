@@ -9,9 +9,8 @@ function Section({ sectionRefs, index, section }) {
           <h3 className="text-quaternary font-extrabold text-xl xs:text-2xl md:text-3xl leading-tight">{title}</h3>
         </div>
       </div>
-      <div className="max-w-screen-lg mx-auto px-4 py-8 md:py-16">
-        {quote ? <div className="border-l-4 border-secondary pl-8 text-lg md:text-xl">{quote}</div> : null}
-        {description ? <div className="text-lg md:text-xl">{description}</div> : null}
+      <div className="max-w-screen-lg mx-auto px-4 py-8 md:py-24">
+        {quote ? <div className="border-l-4 border-secondary pl-8 mb-16 text-lg md:text-xl">{quote}</div> : null}
         {component ? <div className="">{component()}</div> : null}
       </div>
     </section>
