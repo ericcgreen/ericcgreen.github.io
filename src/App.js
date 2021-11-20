@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Hero from './components/hero';
-import Navigation from './components/navigation-v2';
+import Navigation from './components/navigation';
 import Footer from './components/footer';
 import Section from './components/section';
 import Cards from './ui/cards';
@@ -43,14 +43,15 @@ const sections = [
 function App() {
   let sectionRefs = useRef([]);
   sectionRefs.current = sections.map((ref, index) => (sectionRefs.current[index] = React.createRef()));
+
   const handleScrollTo = (e, index) => {
-    sectionRefs.current[index].current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+    sectionRefs.current[index].current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
-  
+
   return (
     <>
       <Navigation handleScrollTo={handleScrollTo} sections={sections} />
-      <main className="pl-48 portfolio">
+      <main className="pl-0 md:pl-48 portfolio">
         {sections.map((section, index) => {
           if (section.id === 'intro') {
             return <Hero sectionRefs={sectionRefs} index={index} key={`section-${section.id}`} />;

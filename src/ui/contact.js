@@ -5,7 +5,7 @@ function Contact() {
     <form className="w-full max-w-lg mx-auto">
       <div className="flex flex-wrap -mx-3 mb-6">
         <div className="w-full px-3">
-          <label className="block uppercase tracking-wide text-primary text-xs font-bold mb-2" for="grid-password">
+          <label className="block uppercase tracking-wide text-primary text-xs font-bold mb-2" htmlFor="grid-password">
             Name
           </label>
           <input
@@ -18,7 +18,7 @@ function Contact() {
       </div>
       <div className="flex flex-wrap -mx-3 mb-6">
         <div className="w-full px-3">
-          <label className="block uppercase tracking-wide text-primary text-xs font-bold mb-2" for="grid-password">
+          <label className="block uppercase tracking-wide text-primary text-xs font-bold mb-2" htmlFor="grid-password">
             E-mail
           </label>
           <input
@@ -31,7 +31,7 @@ function Contact() {
       </div>
       <div className="flex flex-wrap -mx-3 mb-6">
         <div className="w-full px-3">
-          <label className="block uppercase tracking-wide text-primary text-xs font-bold mb-2" for="grid-password">
+          <label className="block uppercase tracking-wide text-primary text-xs font-bold mb-2" htmlFor="grid-password">
             Message
           </label>
           <textarea

@@ -6,5 +6,5 @@ export default function Footer() {
     <footer id="footer" className="bg-primary text-tertiary py-3 px-6 h-18 text-center flex items-center justify-center">
       Made by Eric &copy; {year}
     </footer>
-  )
+  );
 }
