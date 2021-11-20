@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Icon from '../ui/icon';
 
 function DestopMenuOptions({ sections, handleScrollTo, id }) {
-  const wrapperClassName = 'shadow-lg overflow-hidden text-primary fixed left-0 w-48 z-50 pb-16';
+  const wrapperClassName = 'shadow-lg overflow-hidden text-primary fixed left-0 w-48 z-50 pb-16 bg-quaternary';
   const hoverEffectClassName = 'bg-quaternary group-hover:bg-quaternary transition-transform duration-500 ease-in-out transform group-hover:translate-x-2';
   const activeClassName = 'bg-quaternary transform translate-x-2';
   const handleClick = (e, index) => {

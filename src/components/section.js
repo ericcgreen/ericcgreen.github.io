@@ -11,7 +11,7 @@ function Section({ sectionRefs, index, section }) {
       </div>
       <div className="max-w-screen-lg mx-auto px-4 py-8 md:py-16">
         {quote ? <div className="border-l-4 border-secondary pl-8 mb-16 text-lg md:text-xl">{quote}</div> : null}
-        {component ? <div className="">{component()}</div> : null}
+        {component ? <div>{component()}</div> : null}
       </div>
     </section>
   );

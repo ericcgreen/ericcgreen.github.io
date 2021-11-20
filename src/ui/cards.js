@@ -2,7 +2,7 @@ import React from 'react';
 
 function Cards() {
   return (
-    <div className="block gap-4 md:grid md:grid-cols-3 justify-between md:-mx-2">
+    <div className="block gap-4 md:grid md:grid-cols-3 justify-between md:-mx-2 mb-36">
       <div className="w-full md:mx-2 mb-4 md:mb-0">
         <div className="bg-white rounded-sm overflow-hidden shadow relative">
           <img
