@@ -1,42 +1,45 @@
 import React, { useState } from 'react';
+import ScrollSpy from 'react-scrollspy-navigation';
 import Icon from '../ui/icon';
 
 function DestopMenuOptions({ sections, handleScrollTo, id }) {
   const wrapperClassName = 'shadow-lg overflow-hidden text-primary fixed left-0 w-48 z-50 pb-16 bg-quaternary';
   const hoverEffectClassName = 'bg-quaternary group-hover:bg-quaternary transition-transform duration-500 ease-in-out transform group-hover:translate-x-2';
-  const activeClassName = 'bg-quaternary transform translate-x-2';
-  const handleClick = (e, index) => {
-    e.preventDefault();
-    handleScrollTo(e, index);
-  };
   return (
-    <ul className={wrapperClassName} id={id} style={{ height: 'calc(100% + 4rem)' }}>
-      {sections.map((section, index) => {
-        const isActive = false;
-        if (section.id === 'intro') {
-          return (
-            <li key={`nav-${section.id}`} className="group border-b border-tertiary box-content bg-primary">
-              <a href={`/${section.id}`} onClick={(e) => handleClick(e, index)} className={`block px-7 pt-7 pb-8 ${isActive ? activeClassName : hoverEffectClassName}`}>
-                <h1 className="text-lg sm:text-xl md:text-3xl">Eric C. Green</h1>
-                <span className="text-sm">Full Stack Developer</span>
+    <div className={wrapperClassName} id={id} style={{ height: 'calc(100% + 4rem)' }}>
+      <ScrollSpy offsetLeft="192" duration="700">
+        {sections.map((section, index) => {
+          if (section.id === 'intro') {
+            return (
+              <a
+                key={`nav-${section.id}`}
+                ref={React.createRef()}
+                href={`#${section.id}`}
+                className="group block border-b border-tertiary box-content bg-primary"
+                aria-label={`Navigate to the ${section.title} section`}>
+                <div className={`block px-7 pt-7 pb-8 ${hoverEffectClassName}`}>
+                  <h1 className="text-lg sm:text-xl md:text-3xl">Eric C. Green</h1>
+                  <span className="text-sm">Full Stack Developer</span>
+                </div>
               </a>
-            </li>
-          );
-        }
-        return (
-          <li key={`nav-${section.id}`} className={`group ${section.bgColor}`}>
+            );
+          }
+          return (
             <a
-              className={`no-underline flex items-center font-bold py-3 ${isActive ? activeClassName : hoverEffectClassName}`}
-              href={`/${section.id}`}
-              aria-label={`Navigate to the ${section.title} section`}
-              onClick={(e) => handleClick(e, index)}>
-              {section.icon ? <Icon name={section.icon} className={`w-6 h-6 inline-block mx-4 ${section.iconColor}`} /> : null}
-              <span className="inline-block text-primary">{section.title}</span>
+              key={`nav-${section.id}`}
+              ref={React.createRef()}
+              href={`#${section.id}`}
+              className={`group block ${section.bgColor}`}
+              aria-label={`Navigate to the ${section.title} section`}>
+              <div className={`no-underline flex items-center font-bold py-3 ${hoverEffectClassName}`}>
+                {section.icon ? <Icon name={section.icon} className={`w-6 h-6 inline-block mx-4 ${section.iconColor}`} /> : null}
+                <span className="inline-block text-primary">{section.title}</span>
+              </div>
             </a>
-          </li>
-        );
-      })}
-    </ul>
+          );
+        })}
+      </ScrollSpy>
+    </div>
   );
 }
 
@@ -71,7 +74,7 @@ export default function Navigation({ sections, handleScrollTo }) {
   return (
     <>
       <nav className="hidden md:block bg-quaternary w-full overflow-hidden">
-        <DestopMenuOptions sections={sections} handleScrollTo={handleScrollTo} id="menu-desktop" />
+        <DestopMenuOptions sections={sections} id="menu-desktop" />
       </nav>
       <nav className="block md:hidden bg-quaternary w-full fixed inset-x-0 top-0 h-16 z-10 shadow-lg">
         <MobileMenuOptions sections={sections} handleScrollTo={handleScrollTo} toggleNav={toggleNav} setToggleNav={setToggleNav} id="menu-mobile" />

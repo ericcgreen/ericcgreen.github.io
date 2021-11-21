@@ -2,7 +2,10 @@ import React from 'react';
 
 export default function Hero({ sectionRefs, index }) {
   return (
-    <section ref={sectionRefs.current[index]} id="hero" className="hero-background bg-center md:bg-fixed bg-no-repeat bg-cover h-screen relative -mb-16 pb-8 md:mb-0">
+    <section
+      ref={sectionRefs.current[index]}
+      id="intro"
+      className="hero-background bg-center bg-position-y-8 md:bg-position-y-0 md:bg-fixed bg-no-repeat bg-cover h-screen relative -mb-16 pb-8 md:mb-0">
       <div className="relative h-screen bg-opacity-20 bg-black">
         <div className="absolute top-2/4 right-0 px-6">
           <h2 className="px-8 mt-7 mb-5 text-tertiary font-extrabold text-xl md:text-4xl xl:text-6xl">

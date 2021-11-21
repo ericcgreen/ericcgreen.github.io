@@ -29,3 +29,19 @@ code {
   background-color: #153250;
   background-image: url(./assets/eric_headshot_1.JPG);
 }
+
+.active div {
+  @apply bg-quaternary transform translate-x-2;
+}
+
+@layer utilities {
+  @variants responsive {
+    .bg-position-y-0 {
+      background-position-y: 0rem;
+    }
+
+    .bg-position-y-8 {
+      background-position-y: 2rem;
+    }
+  }
+}

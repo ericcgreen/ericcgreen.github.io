@@ -80,6 +80,7 @@ function Contact() {
 const sections = [
   {
     id: 'intro',
+    title: 'Introduction',
   },
   {
     id: 'about',
@@ -106,8 +107,8 @@ function App() {
 
   return (
     <>
-      <Navigation handleScrollTo={handleScrollTo} sections={sections} />
       <main className="pl-0 md:pl-48 portfolio">
+        <Navigation handleScrollTo={handleScrollTo} sections={sections} />
         {sections.map((section, index) => {
           if (section.id === 'intro') {
             return <Hero sectionRefs={sectionRefs} index={index} key={`section-${section.id}`} />;
