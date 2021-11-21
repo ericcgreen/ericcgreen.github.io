@@ -2,7 +2,7 @@ import React from 'react';
 
 function Timeline() {
   return (
-    <div className="flex flex-col justify-center mb-36">
+    <div className="flex flex-col justify-center">
       <div className="sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
         <div className="relative text-gray-700 antialiased text-sm font-semibold">
           <div className="hidden sm:block w-1 bg-blue-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
