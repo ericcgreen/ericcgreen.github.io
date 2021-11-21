@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import ScrollSpy from 'react-scrollspy-navigation';
 import Icon from '../ui/icon';
 
-function DestopMenuOptions({ sections, handleScrollTo, id }) {
+function DestopMenuOptions({ sections, id }) {
   const wrapperClassName = 'shadow-lg overflow-hidden text-primary fixed left-0 w-48 z-50 pb-16 bg-quaternary';
   const hoverEffectClassName = 'bg-quaternary group-hover:bg-quaternary transition-transform duration-500 ease-in-out transform group-hover:translate-x-2';
   return (
     <div className={wrapperClassName} id={id} style={{ height: 'calc(100% + 4rem)' }}>
-      <ScrollSpy offsetLeft="192" duration="700">
-        {sections.map((section, index) => {
+      <ScrollSpy offsetLeft="192">
+        {sections.map((section) => {
           if (section.id === 'intro') {
             return (
               <a
