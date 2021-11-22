@@ -2,7 +2,7 @@
   "name": "ericcgreen.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ericcgreen.github.io/ericcgreen.github.io",
+  "homepage": "https://ericgreen.dev",
   "dependencies": {
     "@craco/craco": "^6.2.0",
     "@testing-library/jest-dom": "^5.14.1",
@@ -21,7 +21,7 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": [
