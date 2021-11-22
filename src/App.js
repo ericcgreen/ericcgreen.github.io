@@ -5,7 +5,7 @@ import Section from './components/section';
 import Footer from './components/footer';
 import Description from './ui/description';
 import Contact from './ui/contact';
-import Cards from './ui/cards';
+/* import Cards from './ui/cards';
 import Timeline from './ui/timeline';
 
 function PortfolioCards() {
@@ -43,6 +43,7 @@ function PortfolioCards() {
   ];
   return <Cards config={config} />;
 }
+*/
 
 const sections = [
   {
@@ -60,8 +61,8 @@ const sections = [
     strong and cohesive working relationships.`,
     component: Description,
   },
-  { id: 'portfolio', icon: 'terminal', iconColor: 'text-sec-green', bgColor: 'bg-sec-green', title: 'Portfolio', component: PortfolioCards },
-  { id: 'resume', icon: 'document-text', iconColor: 'text-sec-blue', bgColor: 'bg-sec-blue', title: 'Resume', component: Timeline },
+  // { id: 'portfolio', icon: 'terminal', iconColor: 'text-sec-green', bgColor: 'bg-sec-green', title: 'Portfolio', component: PortfolioCards },
+  // { id: 'resume', icon: 'document-text', iconColor: 'text-sec-blue', bgColor: 'bg-sec-blue', title: 'Resume', component: Timeline },
   { id: 'contact', icon: 'mail', iconColor: 'text-sec-purple', bgColor: 'bg-sec-purple', title: 'Contact Me', component: Contact },
 ];
 

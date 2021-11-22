@@ -7,14 +7,14 @@ export default function Contact() {
       <p className="my-4 flex">
         <a
           aria-label="Email Eric"
-          href="mailto:green.eric.c@gmail.com"
+          href="mailto:eric@ericgreen.dev"
           target="_blank"
           rel="noreferrer"
           className="shadow-lg bg-tertiary h-12 w-12 rounded-full flex items-center justify-center text-xl text-primary hover:text-secondary">
           <Icon name="mail" className="w-6 h-6" />
         </a>
-        <a aria-label="Email Eric" href="mailto:green.eric.c@gmail.com" target="_blank" rel="noreferrer" className="ml-2 p-2 inline text-xl text-primary hover:text-secondary">
-          green.eric.c@gmail.com
+        <a aria-label="Email Eric" href="mailto:eric@ericgreen.dev" target="_blank" rel="noreferrer" className="ml-2 p-2 inline text-xl text-primary hover:text-secondary">
+          eric@ericgreen.dev
         </a>
       </p>
       <p className="my-4 flex">
