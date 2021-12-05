@@ -4,5 +4,4 @@
 
 - switch to `gh-pages` branch
 - npm run deploy
-- gh-pages -b master -d build
 - configure Custom Domain in repo settings
