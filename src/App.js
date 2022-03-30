@@ -9,18 +9,19 @@ import Cards from './ui/cards';
 // import Timeline from './ui/timeline';
 import towersOfHanoi from './assets/towers-of-hanoi.png';
 import farmart from './assets/farmart.png';
+import theSwagShop from './assets/the-swag-shop.png';
 
 function PortfolioCards() {
   const config = [
     {
       id: 'card-1',
       title: 'The Swag Shop',
-      image: 'https://images.unsplash.com/photo-1457282367193-e3b79e38f207?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1654&q=80',
+      image: theSwagShop,
       alt: 'The Swag Shop Project',
-      href: '#',
-      github: '#',
-      description: 'This app is a store that utilizes Fake Store API to demonstrate use of TypeScript and REST API.',
-      accomplishments: ['ReactJS', 'TypeScript', 'Tailwind CSS'],
+      href: 'https://ericgreen.dev/the-swag-shop/',
+      github: 'https://github.com/ericcgreen/the-swag-shop/',
+      description: 'This is a store app that utilizes a mock API to demonstrate use of TypeScript and REST API.',
+      information: ['ReactJS', 'TypeScript', 'Tailwind CSS', 'Full CRUD functionality'],
     },
     {
       id: 'card-2',
@@ -28,9 +29,9 @@ function PortfolioCards() {
       image: farmart,
       alt: 'Farmart Project',
       href: 'https://nfiona.github.io/Project3_FarMart/',
-      github: 'https://github.com/nfiona/Project3_FarMart',
+      github: 'https://github.com/nfiona/Project3_FarMart/',
       description: 'This app allows vendors to post about their stores and products for the next upcoming farmers market.',
-      accomplishments: ['AngularJs', 'Rails API', 'Full CRUD functionality'],
+      information: ['AngularJs', 'Rails API', 'Full CRUD functionality'],
     },
     {
       id: 'card-3',
@@ -38,9 +39,9 @@ function PortfolioCards() {
       image: towersOfHanoi,
       alt: 'Towers of Hanoi Project',
       href: 'https://ericgreen.dev/eric_green_project1/',
-      github: 'https://github.com/ericcgreen/eric_green_project1',
+      github: 'https://github.com/ericcgreen/eric_green_project1/',
       description: 'This app was made using HTML, CSS, and JavaScript.',
-      accomplishments: ['First GA project', 'Utilized HTML, CSS, JS', 'Pokemon theme!'],
+      information: ['First GA project', 'Utilized HTML, CSS, JS', 'Pokemon theme!'],
     },
   ];
   return <Cards config={config} />;
