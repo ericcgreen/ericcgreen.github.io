@@ -3,7 +3,7 @@ import Icon from './icon';
 
 function Card({ card }) {
   const [open, toggleOpen] = useState(false);
-  const { title, image, alt, href, github, accomplishments, description } = card;
+  const { title, image, alt, href, github, information, description } = card;
   return (
     <button
       aria-label={`Click to ${open ? 'close' : 'open'} ${title} details`}
@@ -22,8 +22,8 @@ function Card({ card }) {
           </button>
         </div>
         <ul className="block text-primary py-4 pr-4 pl-8 list-outside list-disc">
-          {accomplishments.map((acc) => {
-            return <li key={acc}>{acc}</li>;
+          {information.map((info) => {
+            return <li key={info}>{info}</li>;
           })}
         </ul>
         <div className="absolute w-full bottom-0 p-4 border-t border-primary flex justify-center">

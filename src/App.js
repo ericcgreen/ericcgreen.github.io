@@ -5,45 +5,47 @@ import Section from './components/section';
 import Footer from './components/footer';
 import Description from './ui/description';
 import Contact from './ui/contact';
-/* import Cards from './ui/cards';
-import Timeline from './ui/timeline';
+import Cards from './ui/cards';
+// import Timeline from './ui/timeline';
+import towersOfHanoi from './assets/towers-of-hanoi.png';
+import farmart from './assets/farmart.png';
+import theSwagShop from './assets/the-swag-shop.png';
 
 function PortfolioCards() {
   const config = [
     {
       id: 'card-1',
-      title: 'Woman standing',
-      image: 'https://images.unsplash.com/photo-1457282367193-e3b79e38f207?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1654&q=80',
-      alt: 'This is some text',
-      href: '#',
-      github: '#',
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
-      accomplishments: ['Sed ut perspiciatis unde', 'Omnis iste natus error sit', 'Voluptatem accusantium doloremque laudantium'],
+      title: 'The Swag Shop',
+      image: theSwagShop,
+      alt: 'The Swag Shop Project',
+      href: 'https://ericgreen.dev/the-swag-shop/',
+      github: 'https://github.com/ericcgreen/the-swag-shop/',
+      description: 'This is a store app that utilizes a mock API to demonstrate use of TypeScript and REST API.',
+      information: ['ReactJS', 'TypeScript', 'Tailwind CSS', 'Full CRUD functionality'],
     },
     {
       id: 'card-2',
-      title: 'Woman walking',
-      image: 'https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-      alt: 'This is some text',
-      href: '#',
-      github: '#',
-      description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.`,
-      accomplishments: ['Totam rem aperiam', 'Eaque ipsa quae ab illo', 'Inventore veritatis et quasi', 'Beatae vitae dicta', 'Perspiciatis unde omnis iste'],
+      title: 'Farmart',
+      image: farmart,
+      alt: 'Farmart Project',
+      href: 'https://nfiona.github.io/Project3_FarMart/',
+      github: 'https://github.com/nfiona/Project3_FarMart/',
+      description: 'This app allows vendors to post about their stores and products for the next upcoming farmers market.',
+      information: ['AngularJs', 'Rails API', 'Full CRUD functionality'],
     },
     {
       id: 'card-3',
-      title: 'Walking through',
-      image: 'https://images.unsplash.com/photo-1467238307002-480ffdd260f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-      alt: 'This is some text',
-      href: '#',
-      github: '#',
-      description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit.`,
-      accomplishments: ['Nemo enim ipsam', 'Voluptatem quia voluptas', 'Aut odit aut fugit'],
+      title: 'Towers of Hanoi Project',
+      image: towersOfHanoi,
+      alt: 'Towers of Hanoi Project',
+      href: 'https://ericgreen.dev/eric_green_project1/',
+      github: 'https://github.com/ericcgreen/eric_green_project1/',
+      description: 'This app was made using HTML, CSS, and JavaScript.',
+      information: ['First GA project', 'Utilized HTML, CSS, JS', 'Pokemon theme!'],
     },
   ];
   return <Cards config={config} />;
 }
-*/
 
 const sections = [
   {
@@ -61,8 +63,8 @@ const sections = [
     strong and cohesive working relationships.`,
     component: Description,
   },
-  // { id: 'portfolio', icon: 'terminal', iconColor: 'text-sec-green', bgColor: 'bg-sec-green', title: 'Portfolio', component: PortfolioCards },
-  // { id: 'resume', icon: 'document-text', iconColor: 'text-sec-blue', bgColor: 'bg-sec-blue', title: 'Resume', component: Timeline },
+  { id: 'portfolio', icon: 'terminal', iconColor: 'text-sec-green', bgColor: 'bg-sec-green', title: 'Portfolio', component: PortfolioCards },
+  // { id: 'timeline', icon: 'document-text', iconColor: 'text-sec-blue', bgColor: 'bg-sec-blue', title: 'Resume', component: Timeline },
   { id: 'contact', icon: 'mail', iconColor: 'text-sec-purple', bgColor: 'bg-sec-purple', title: 'Contact Me', component: Contact },
 ];
 
